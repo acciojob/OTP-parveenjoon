@@ -1,44 +1,49 @@
+
+/*  your css code here. If applicable */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  padding: 10px;
 }
 
-.container {
-    text-align: center;
-}
-
-#verification_heading {
-    font-size: 24px;
-    margin-bottom: 10px;
+#verification_heading,
+#verification_subtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
 }
 
 #verification_subtext {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
+  font-weight: 400;
+  font-size: medium;
+  color: rgb(67, 67, 67);
 }
 
 .code-container {
-    display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .code {
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    text-align: center;
-    margin: 0 5px;
-    border: 2px solid black; /* Add black border */
-    border-radius: 5px;
-}
-
-.code:focus {
-    outline: none;
-    border-color: blue;
-    box-shadow: 0 0 3px rgba(0, 0, 255, 0.5);
+  width: 10%;
+  height: 10%;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid rgba(211, 211, 211, 0.548);
+  border-radius: 2px;
+  border-top: none;
+  font-size: 3rem;
+  font-weight: medium;
 }
